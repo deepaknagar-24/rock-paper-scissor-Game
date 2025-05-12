@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.score-board {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+}
+
+.score {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 140px));
+  place-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.choice {
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  position: relative;
+}
+
+.choice img{
+    width: 120px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.choice:nth-child(1){
+  border: 1px solid palevioletred;
+  border-radius: 50%;
+}
+
+.choice:nth-child(2) {
+  border: 1px solid purple;
+  border-radius: 50%;
+}
+
+
+.choice:nth-child(3) {
+  border: 1px solid blue;
+  border-radius: 50%;
+}
+
+.msg-container{
+ display: flex;
+ justify-content: center;
+align-items: center;
+ margin-top: 1.5rem;
+ font-size: 1.3rem;
+ height: 50px;
+ padding: 0.6rem;
+ cursor: pointer;
+ align-items: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:white;
+   margin-top: 1rem; 
+  background-color: rgb(20, 18, 28);
+  border-radius: 0.6rem;
+}
+
+@media screen and (max-width:560px){
+     .choice img{
+    width: 90px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 140px));
+  place-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+.score-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-bottom: 1.5rem;
+  gap: 0.7rem;
+}
+
+.result {
+width: 150px;
+ height: 45px;
+ position: relative;
+ display: flex;
+ padding-bottom: 0.2rem;
+ justify-content: center;
+ cursor: pointer;
+ align-items: center;
+ left: 22%;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color:white;
+   margin-top: 1rem; 
+  background-color: rgb(20, 18, 28);
+  border-radius: 0.4rem;
+}
+
+}
